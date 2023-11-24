@@ -5,12 +5,14 @@ const StyledHeader = styled.header`
   padding: 20px;
   background-color: #ddd;
   color: black;
+  font-size: 22px;
+  font-weight: bold;
   border-radius: 4px;
   margin-bottom: 20px;
 `;
 
 const Header = () => {
-  return <StyledHeader>TO-DO App</StyledHeader>;
+  return <StyledHeader>My tasks</StyledHeader>;
 };
 
 export default Header;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   text-align: center;
+  font-size: 12px;
   padding: 10px;
   background-color: #ddd;
   color: black;
@@ -29,15 +30,15 @@ const StyledLink = styled.a`
 const Footer = () => {
   return (
     <StyledFooter>
-      &copy; 2023 TO-DO App, by{" "}
+      &copy; 2023 TO-DO App, by
       <StyledLink href="https://github.com/Calleobe" target="_blank" rel="noopener noreferrer">
         Carl Öberg
-      </StyledLink>{" "}
-      &{" "}
-      <StyledLink href="https://github.com/fabio-cassisa" target="_blank" rel="noopener noreferrer">
-        Fabio Cassisa
       </StyledLink>
-      . Technigo 2023.
+      &
+      <StyledLink href="https://github.com/fabio-cassisa" target="_blank" rel="noopener noreferrer">
+        Fabio Cassisa.
+      </StyledLink>
+      Technigo 2023.
     </StyledFooter>
   );
 };
