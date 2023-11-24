@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
@@ -20,7 +19,7 @@ const StyledLink = styled.a`
     color: black;
     text-decoration: underline;
   }
-  
+
   &:visited {
     color: black;
     text-decoration: none;
@@ -31,11 +30,19 @@ const Footer = () => {
   return (
     <StyledFooter>
       &copy; 2023 TO-DO App, by
-      <StyledLink href="https://github.com/Calleobe" target="_blank" rel="noopener noreferrer">
+      <StyledLink
+        href="https://github.com/Calleobe"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Carl Öberg
       </StyledLink>
       &
-      <StyledLink href="https://github.com/fabio-cassisa" target="_blank" rel="noopener noreferrer">
+      <StyledLink
+        href="https://github.com/fabio-cassisa"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Fabio Cassisa.
       </StyledLink>
       Technigo 2023.

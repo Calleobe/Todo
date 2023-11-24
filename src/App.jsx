@@ -29,13 +29,13 @@ const GlobalStyle = createGlobalStyle`
 
   @media (min-width: 1024px) {
     body {
-      width: 70%;
+      width: 60%;
     }
   }
   
   @media (min-width: 1200px) {
     body {
-      width: 80%;
+      width: 50%;
     }
   }
 `;
@@ -50,10 +50,10 @@ export const App = () => {
   return (
     <Provider store={store}>
       <GlobalStyle /> {}
-        <Header />
-          <AddTaskForm />
-          <TaskList />
-        <Footer />
+      <Header />
+      <AddTaskForm />
+      <TaskList />
+      <Footer />
     </Provider>
   );
 };

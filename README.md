@@ -1,21 +1,9 @@
-# Technigo React Starter App
-
-## Usage
-
-1. Fork and clone this repository to your computer
-2. Install required dependencies with npm: `npm install`
-3. Start the project: `npm run dev`
-
-# Project Todos
-
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Project by Carl Öberg and Fabio Cassisa
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We made a simple to-do app with the use of React and Redux toolkit. Since we were very short on time this week we focused on a MVP. We were interested to explore styled components and implemented that into the assignment. We wanted direct our focus on the final project instead.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://project-todo-list-peach.vercel.app/
