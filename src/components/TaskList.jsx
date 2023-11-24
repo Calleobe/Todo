@@ -3,8 +3,7 @@ import TaskItem from "./TaskItem";
 import styled from "styled-components";
 
 const StyledTaskList = styled.div`
-  margin-left: 30px;
-  margin-bottom: 10px;
+  margin: 10px;
 `;
 
 const TaskList = () => {

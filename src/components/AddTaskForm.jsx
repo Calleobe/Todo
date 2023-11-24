@@ -4,12 +4,15 @@ import { useDispatch } from "react-redux";
 import { addTask } from "../reducers/tasks";
 
 const Container = styled.div`
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 `;
 
 const Form = styled.form`
   display: flex;
-  margin-bottom: 20px;
+  align-items: center;
+  gap: 10px;
 `;
 
 const Input = styled.input`
@@ -17,8 +20,6 @@ const Input = styled.input`
   padding: 10px;
   border: 2px solid #ddd;
   border-radius: 4px;
-  margin-right: 10px;
-
   font-size: 16px;
 `;
 

@@ -13,14 +13,29 @@ const GlobalStyle = createGlobalStyle`
     padding: 20px;
     background-color: #f8f8f8;
     margin: 0 auto; 
-    
   }
 
+  @media (max-width: 600px) {
+    body {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    body {
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    body {
+      width: 70%;
+    }
+  }
   
   @media (min-width: 1200px) {
     body {
-      width: 50%;
-     
+      width: 80%;
     }
   }
 `;
@@ -35,10 +50,10 @@ export const App = () => {
   return (
     <Provider store={store}>
       <GlobalStyle /> {}
-      <Header />
-      <AddTaskForm />
-      <TaskList />
-      <Footer />
+        <Header />
+          <AddTaskForm />
+          <TaskList />
+        <Footer />
     </Provider>
   );
 };

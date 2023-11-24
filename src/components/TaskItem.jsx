@@ -21,7 +21,6 @@ const Checkbox = styled.input`
 
 const Text = styled.span`
   flex: 1;
-  word-break: break-all; /* Break long words */
   overflow-wrap: break-word; /* For a more natural word break */
 `;
 
