@@ -1,6 +1,8 @@
 import { Provider } from "react-redux";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import tasksReducer from "./reducers/tasks";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import TaskList from "./components/TaskList";
 import AddTaskForm from "./components/AddTaskForm";
 import { createGlobalStyle } from "styled-components";
@@ -47,9 +49,11 @@ const store = configureStore({ reducer });
 export const App = () => {
   return (
     <Provider store={store}>
-      <GlobalStyle />
-        <AddTaskForm />
-        <TaskList />
+      <GlobalStyle /> {}
+        <Header />
+          <AddTaskForm />
+          <TaskList />
+        <Footer />
     </Provider>
   );
 };
