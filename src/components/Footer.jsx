@@ -18,7 +18,12 @@ const StyledLink = styled.a`
   margin: 0 5px;
 
   &:hover {
-    color: #333;
+    color: #ff2;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: #ff2;
     text-decoration: underline;
   }
 `;
