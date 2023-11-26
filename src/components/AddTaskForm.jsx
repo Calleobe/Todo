@@ -12,7 +12,7 @@ const Container = styled.div`
 const Form = styled.form`
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 `;
 
 const Input = styled.input`
@@ -31,7 +31,7 @@ const Button = styled.button`
   border-radius: 8px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Helvetica Neue", sans-serif;
   transition: transform 0.2s ease-in-out, background-color 0.2s;
 
