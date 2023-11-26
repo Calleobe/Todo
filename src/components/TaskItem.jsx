@@ -20,7 +20,8 @@ const Checkbox = styled.input`
 
 const Text = styled.span`
   flex: 1;
-  overflow-wrap: break-word; /* For a more natural word break */
+  word-break: break-all;
+  overflow-wrap: break-word;
 `;
 
 const DeleteButton = styled.button`
