@@ -5,14 +5,13 @@ import { toggleTask, deleteTask } from "../reducers/tasks";
 const TaskContainer = styled.div`
   display: flex;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: ${(props) => (props.$complete ? "#6dd5ed" : "#fff")};
   padding: 10px;
-  margin-top 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
-
-  background-color: ${(props) => (props.$complete ? "#dff0d8" : "white")};
 `;
 
 const Checkbox = styled.input`
@@ -25,17 +24,17 @@ const Text = styled.span`
 `;
 
 const DeleteButton = styled.button`
-  background-color: #d9534f;
-  color: white;
+  background-color: #ff6f61;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 5px 10px;
   margin-left: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #c9302c;
+    background-color: #ff9000;
   }
 `;
 

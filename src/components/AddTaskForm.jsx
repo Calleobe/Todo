@@ -19,22 +19,29 @@ const Input = styled.input`
   flex: 1;
   padding: 10px;
   border: 2px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 16px;
 `;
 
 const Button = styled.button`
   padding: 10px 20px;
-  background-color: #5cb85c;
+  background-color: #2193b0;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s;
+  font-family: "Helvetica Neue", sans-serif;
+  transition: transform 0.2s ease-in-out, background-color 0.2s;
 
   &:hover {
-    background-color: #4cae4c;
+    background-color: #6dd5ed;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95); /* Subtle click animation */
   }
 `;
 

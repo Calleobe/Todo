@@ -10,6 +10,8 @@ const TaskData = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 14px;
+  color: #fff;
+  font-weight: bold;
 `;
 
 const TaskList = () => {

@@ -2,27 +2,24 @@ import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   text-align: center;
+  padding: 20px;
+  background-color: #2193b0; // Cool blue, same as primary color
+  color: #fff; // White text for contrast
   font-size: 12px;
-  padding: 10px;
-  background-color: #ddd;
-  color: black;
-  border-radius: 4px;
-  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
 `;
 
 const StyledLink = styled.a`
-  color: black;
+  color: #ff2;
   text-decoration: none;
   margin: 0 5px;
 
   &:hover {
-    color: black;
+    color: #333;
     text-decoration: underline;
-  }
-
-  &:visited {
-    color: black;
-    text-decoration: none;
   }
 `;
 

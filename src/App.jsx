@@ -9,34 +9,25 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     padding: 20px;
-    background-color: #f8f8f8;
-    margin: 0 auto; 
+    background-color: #555; 
+    color: #333; 
+    margin: 0 auto;
   }
 
+  // Responsive design settings
   @media (max-width: 600px) {
-    body {
-      width: 100%;
-    }
+    body { width: 100%; }
   }
-
   @media (min-width: 768px) {
-    body {
-      width: 60%;
-    }
+    body { width: 60%; }
   }
-
   @media (min-width: 1024px) {
-    body {
-      width: 60%;
-    }
+    body { width: 60%; }
   }
-  
   @media (min-width: 1200px) {
-    body {
-      width: 50%;
-    }
+    body { width: 50%; }
   }
 `;
 
