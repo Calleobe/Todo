@@ -1,16 +1,18 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { subDays } from "date-fns";
+
 
 export const tasksSlice = createSlice({
   name: "tasks",
   initialState: [
-    { id: 1, text: "Watch video on actions & reducers", complete: true },
-    { id: 2, text: "Follow redux codealong", complete: true },
-    { id: 3, text: "Fork weekly assignment", complete: false },
-    { id: 4, text: "Create a todo app", complete: false },
+    { id: 1, text: "Watch video on actions & reducers", complete: true, createdAt: new Date().toISOString() },
+    { id: 2, text: "Follow redux codealong", complete: true, createdAt: subDays(new Date(), 1).toISOString() },
+    { id: 3, text: "Fork weekly assignment", complete: false, createdAt: subDays(new Date(), 3).toISOString() },
+    { id: 4, text: "Create a todo app", complete: false, createdAt: subDays(new Date(), 5).toISOString() },
   ],
   reducers: {
     addTask: (state, action) => {
-      state.push(action.payload);
+      state.push({ ...action.payload, createdAt: new Date().toISOString() });
     },
     toggleTask: (state, action) => {
       const task = state.find((task) => task.id === action.payload);
