@@ -1,6 +1,8 @@
-import styled, { css } from "styled-components";
+// ... (import statements)
+import styled from "styled-components";
 import { useDispatch } from "react-redux";
 import { toggleTask, deleteTask } from "../reducers/tasks";
+import { format, parseISO } from "date-fns";
 
 const TaskContainer = styled.div`
   display: flex;
@@ -18,10 +20,20 @@ const Checkbox = styled.input`
   margin-right: 15px;
 `;
 
-const Text = styled.span`
+const TextContainer = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+`;
+
+const TaskText = styled.span`
   word-break: break-all;
   overflow-wrap: break-word;
+`;
+
+const TaskDate = styled.span`
+  font-size: 12px;
+  color: #888;
 `;
 
 const DeleteButton = styled.button`
@@ -57,10 +69,14 @@ const TaskItem = ({ task }) => {
         checked={task.complete}
         onChange={handleToggle}
       />
-      <Text>{task.text}</Text>
+      <TextContainer>
+        <TaskText>{task.text}</TaskText>
+        <TaskDate>{format(parseISO(task.createdAt), "MM/dd HH:mm")}</TaskDate>
+      </TextContainer>
       <DeleteButton onClick={handleDelete}>Delete</DeleteButton>
     </TaskContainer>
   );
 };
 
 export default TaskItem;
+
