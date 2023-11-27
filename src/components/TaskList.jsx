@@ -13,6 +13,22 @@ const TaskData = styled.div`
   font-size: 14px;
   color: #fff;
   font-weight: bold;
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
 `;
 
 const Completed = styled.div`
@@ -30,6 +46,23 @@ const Counter = styled.div`
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   font-size: 14px;
   font-family: "Helvetica Neue", sans-serif;
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
 `;
 
 const Button = styled.button`
@@ -43,6 +76,23 @@ const Button = styled.button`
   font-size: 14px;
   font-family: "Helvetica Neue", sans-serif;
   transition: transform 0.2s ease-in-out, background-color 0.2s;
+
+  @media (max-width: 600px) {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
 
   &:hover {
     background-color: #6dd5ed;

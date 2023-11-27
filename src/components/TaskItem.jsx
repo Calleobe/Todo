@@ -27,7 +27,6 @@ const TextContainer = styled.div`
 `;
 
 const TaskText = styled.span`
-  word-break: break-all;
   overflow-wrap: break-word;
 `;
 
